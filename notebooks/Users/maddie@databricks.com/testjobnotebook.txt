@@ -1,0 +1,18 @@
+-- Databricks notebook source exported at Wed, 15 Jun 2016 19:03:35 UTC
+-- MAGIC %md
+-- MAGIC Test the notebook snapshot with jobs
+
+-- COMMAND ----------
+
+select count(*) from maddie_mock_data
+
+-- COMMAND ----------
+
+desc maddie_mock_data
+
+-- COMMAND ----------
+
+select country, count(*) from maddie_mock_data group by country
+
+-- COMMAND ----------
+
