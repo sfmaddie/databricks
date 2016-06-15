@@ -16,3 +16,5 @@ select country, count(*) from maddie_mock_data group by country
 
 -- COMMAND ----------
 
+select count(*) from maddie_mock_data where country = 'Sweden'
+
