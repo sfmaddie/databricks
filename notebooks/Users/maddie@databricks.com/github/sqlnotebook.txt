@@ -1,9 +1,0 @@
--- Databricks notebook source exported at Sat, 18 Jun 2016 05:36:12 UTC
-select count(*) from maddie_mock_data
-
--- COMMAND ----------
-
-select country, count(*) from maddie_mock_data group by country
-
--- COMMAND ----------
-
