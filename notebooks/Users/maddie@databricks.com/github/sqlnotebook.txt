@@ -3,7 +3,7 @@ select count(*) from maddie_mock_data
 
 -- COMMAND ----------
 
-select country, count(*) from maddie_mock_data group by country order by country
+select country, count(*) from maddie_mock_data group by country
 
 -- COMMAND ----------
 
