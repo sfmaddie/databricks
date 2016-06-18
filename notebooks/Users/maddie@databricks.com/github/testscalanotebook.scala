@@ -12,3 +12,4 @@ val MountName = "REPLACE_WITH_YOUR_MOUNT_NAME"
 
 // COMMAND ----------
 
+val newvariable = "added in github"
