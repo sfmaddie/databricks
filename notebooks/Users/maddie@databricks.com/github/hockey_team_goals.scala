@@ -1,4 +1,4 @@
-// Databricks notebook source exported at Tue, 21 Jun 2016 23:33:50 UTC
+// Databricks notebook source exported at Tue, 21 Jun 2016 23:37:19 UTC
 // MAGIC %sql use maddiedev
 
 // COMMAND ----------
@@ -12,17 +12,7 @@ dbutils.widgets.dropdown("Hockey Teams", "sharks", Seq("sharks", "bruins", "canu
 
 // COMMAND ----------
 
-val team1 = dbutils.widgets.get("Hockey Teams");
-
-if (team1 == "all") {
-  val total_goals = sqlContext.sql("select game as team, count(*) as total_goals from games group by game");
-  display(total_goals);
-}
-else {
-  val total_goals = sqlContext.sql("select game as team, count(*) as total_goals from games where game='"+team1+"' group by game");
-  display(total_goals);
-}
-
+ksdfghmsdfnbmxcvbnkxvc.bj,r
 
 // COMMAND ----------
 
