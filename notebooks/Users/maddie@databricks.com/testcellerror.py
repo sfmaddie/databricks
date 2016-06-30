@@ -1,5 +1,5 @@
-# Databricks notebook source exported at Thu, 30 Jun 2016 17:41:38 UTC
-for i in range(7):
+# Databricks notebook source exported at Thu, 30 Jun 2016 17:42:04 UTC
+for i in range(70):
     print i
     import time
     time.sleep(0.5)
