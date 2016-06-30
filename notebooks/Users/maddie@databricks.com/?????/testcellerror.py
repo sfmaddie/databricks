@@ -1,4 +1,4 @@
-# Databricks notebook source exported at Thu, 30 Jun 2016 17:44:11 UTC
+# Databricks notebook source exported at Thu, 30 Jun 2016 17:44:16 UTC
 for i in range(70):
     print i
     import time
