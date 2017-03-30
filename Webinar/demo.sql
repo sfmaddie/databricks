@@ -7,6 +7,14 @@ select * from emp
 
 -- COMMAND ----------
 
+select state, sum(salary) from emp where state = getArgument("state") group by emp.state
+
+-- COMMAND ----------
+
+-- MAGIC %scala dbutils.notebook.run("workflow", 60, Map("msg" -> "hello"));
+
+-- COMMAND ----------
+
 -- MAGIC %scala 
 -- MAGIC val taxes2013 = sqlContext
 -- MAGIC   .read.format("com.databricks.spark.csv")
@@ -37,6 +45,14 @@ SELECT state, int(zipcode / 10) as zipcode,
   double(a01000) as net_capital_gains,
   double(a00900) as biz_net_income
 FROM taxes2013
+
+-- COMMAND ----------
+
+-- MAGIC %scala //add input widgets
+-- MAGIC //dbutils.widgets.help()
+-- MAGIC //dbutils.widgets.dropdown("state", "CA", Seq("CA", "OR", "WI", "NY", "IL"), "state")
+-- MAGIC //dbutils.widgets.remove("gender")
+-- MAGIC //dbutils.widgets.multiselect("gender", "female", Seq("female", "male"), "gender")
 
 -- COMMAND ----------
 
